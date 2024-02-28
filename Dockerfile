@@ -1,4 +1,4 @@
-FROM python:3.13
+FROM python:3.8
 
 WORKDIR /app
 
@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY app .
+COPY app/app.py .
 
 EXPOSE 5555
 
